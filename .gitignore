@@ -1,0 +1,66 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables & secrets (CRITICAL: NEVER commit API keys)
+.env
+.env.*
+!.env.example
+*.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Speech models and binary weights (downloaded via scripts/fetch_models.py)
+models/*
+!models/.gitkeep
+Autonomus-voice-agent/models/*
+!Autonomus-voice-agent/models/.gitkeep
+*.onnx
+*.onnx.json
+piper/
+piper.zip
+
+# Audio, test and log artifacts
+*.wav
+*.mp3
+*.ogg
+*.log
+llm/history.json
+Autonomus-voice-agent/llm/history.json
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
